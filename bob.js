@@ -6,7 +6,7 @@ class Bob
         this.y = y
         this.r = radius
 
-        this.body = Bodies.rectangle(this.x,this.y,this.r,{isStactic:true})
+        this.body = Bodies.rectangle(this.x,this.y,this.r,{isStactic:false})
         World.add(world,this.body)
 
         var offset = (x - handleBody.position.x)
@@ -20,6 +20,7 @@ class Bob
     fill("purple")
     circle(this.x,this.y,this.r)
     this.chain.display()
+    
 
    }
 }
